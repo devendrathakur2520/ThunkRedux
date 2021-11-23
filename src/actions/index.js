@@ -1,4 +1,4 @@
-
+export const LOG_DETAILS="LOG_DETAILS";
 import shop from '../api/shop'
 import * as types from '../constants/ActionTypes'
 
@@ -40,3 +40,4 @@ export const checkout = products => (dispatch, getState) => {
   })
 }
 
+export const logDetails = (payload) => ({ type: LOG_DETAILS, payload });
